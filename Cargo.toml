@@ -8,8 +8,13 @@ members = [
 ]
 
 [workspace.dependencies]
-polars = { version = "0.36.2", default-features = false }
-polars-core = { version = "0.36.2", default-features = false }
-polars-ffi = { version = "0.36.2", default-features = false }
-polars-plan = { version = "0.36.2", default-feautres = false }
-polars-lazy = { version = "0.36.2", default-features = false }
+#polars = { version = "0.36.2", default-features = false }
+#polars-core = { version = "0.36.2", default-features = false }
+#polars-ffi = { version = "0.36.2", default-features = false }
+#polars-plan = { version = "0.36.2", default-feautres = false }
+#polars-lazy = { version = "0.36.2", default-features = false }
+polars = { git = "https://github.com/pola-rs/polars.git", rev = "1d434cc", default-features = false }
+polars-core = { git = "https://github.com/pola-rs/polars.git", rev = "1d434cc", default-features = false }
+polars-ffi = { git = "https://github.com/pola-rs/polars.git", rev = "1d434cc", default-features = false }
+polars-plan = { git = "https://github.com/pola-rs/polars.git", rev = "1d434cc", default-features = false }
+polars-lazy = { git = "https://github.com/pola-rs/polars.git", rev = "1d434cc", default-features = false }
