@@ -216,7 +216,7 @@ fn create_field_function(
 
                 match result {
                     Ok(out) => {
-                        let out = polars_core::export::arrow::ffi::export_field_to_c(&out.to_arrow());
+                        let out = polars_core::export::arrow::ffi::export_field_to_c(&out.to_arrow(true));
                         *return_value = out;
                     },
                     Err(err) => {
@@ -253,7 +253,7 @@ fn create_field_function_from_with_dtype(
             let mapper = polars_plan::dsl::FieldsMapper::new(&inputs);
             let dtype = polars_core::datatypes::DataType::#dtype;
             let out = mapper.with_dtype(dtype).unwrap();
-            let out = polars_core::export::arrow::ffi::export_field_to_c(&out.to_arrow());
+            let out = polars_core::export::arrow::ffi::export_field_to_c(&out.to_arrow(true));
             *return_value = out;
         }
     )
