@@ -1,11 +1,12 @@
 [package]
 name = "pyo3-polars-derive"
-version = "0.4.0"
+version = "0.4.1"
 edition = "2021"
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/pola-rs/pyo3-polars"
-description = "Proc-macro's for pyo3-polars"
+#repository = "https://github.com/pola-rs/pyo3-polars"
+repository = "https://github.com/sahuagin/pyo3-polars"
+description = "fork of Proc-macro's for pyo3-polars"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
